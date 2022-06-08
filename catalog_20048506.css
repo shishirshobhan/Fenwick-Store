@@ -1,0 +1,154 @@
+* {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+Store {
+    /* background-color: #e6e6e6; */
+    background:linear-gradient(to right, #e6e6e6 50%, #d9d9d9 50%);
+}
+
+Logo {
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    float: right;
+    background-color: antiquewhite;
+    border: 5px solid coral;
+    content: url(logo.png);
+    margin-right: 50px;
+}
+Store_Name{
+    float: left;
+    margin-left: 400px;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+Store_Motto{
+    margin-left: 570px;
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+}
+
+Store_Description {
+    margin-top: 20px;
+    width: 40%;
+    margin-left: 460px;
+    font-size: 23px;
+    text-align: justify;
+}
+
+Store_Address{
+    position: absolute;
+    margin-top:10px;
+    margin-left: 690px;
+}
+ Store_Website{
+    position: absolute;
+    margin-top:65px;
+    margin-left: 690px;
+
+ }
+
+Store_Contact {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 690px;
+}
+
+Mail {
+    float: right;
+    margin-top: 85px;
+    margin-right: 665px;
+}
+
+Gift_Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 2px solid green; */
+    margin: 170px 20px;
+
+}
+Gift_Card{
+    display: flex;
+    border: 2px solid black;
+    height: 300px;
+    width: 40%;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    flex-direction: column;
+    background-image: url('logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s linear;
+    /* flex-direction: row; */
+}
+[type="Physical"] Valid_Places{
+    /* border: 2px solid red; */
+    margin-top: 40px;
+}
+
+Gift_Card:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+    font-size: 20px;
+    /* font-family: cursive; */
+}
+Card_Cost{
+    /* border: 2px solid red; */
+    height: 30px;
+    margin-top: 10px;
+    order: 3;
+}
+Code_Number{
+    /* border: 2px solid red; */
+    height: 30px;
+    margin-top: 10px;
+    order:2;
+}
+Card_Validity{
+    /* border: 2px solid red; */
+    height: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    order: 5;
+}
+Card_Validity Card_Expired_Date{
+    float: right;
+
+}
+Card_Owner_Name{
+    /* border: 2px solid red; */
+    height: 30px;
+    margin-top: 10px;
+    order: 1;
+}
+Card_owner_Address{
+    /* border: 2px solid red; */
+    height: 30px;
+    margin-top: 10px;
+    order: 4;
+}
+Discount_Voucher{
+    /* border: 2px solid red; */
+    height: 30px;
+    margin-top: 10px;
+    order: 6;
+}
+Valid_Places{
+    /* border: 2px solid red; */
+    height: 40px;
+    margin-top: 10px;
+    order: 7;
+}

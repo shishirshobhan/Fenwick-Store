@@ -1,0 +1,127 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Store">
+    <xs:complexType>
+      <xs:sequence>
+      <xs:element type="xs:string" name="Logo"/>
+        <xs:element type="xs:string" name="Store_Name"/>
+         <xs:element type="xs:string" name="Store_Motto" minOccurs="0"/>
+         <xs:element type="xs:string" name="Store_Description"/>
+        <xs:element name="Store_Address" />
+        <xs:element name="Store_Contact">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mobile">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="mobile_restriction">
+                      <xs:attribute type="xs:byte" name="Country_Code"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Landline">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="landline_restriction">
+                      <xs:attribute type="xs:byte" name="State_Code"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:anyURI" name="Store_Website"/>
+        <xs:element name="Mail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Postal_Address" minOccurs="0"/>
+              <xs:element name="E-mail">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[^@]+@[^\.]+\..+"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Gift_Cards">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Gift_Card" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Code_Number" minOccurs="0"/>
+                    <xs:element name="Card_Validity">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:date" name="Card_Activation_Date"/>
+                          <xs:element type="xs:date" name="Card_Expired_Date"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Valid_Places">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="description"/>
+                          <xs:element type="xs:string" name="Place"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Card_Cost">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="currency" use="optional">
+                              <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                  <xs:enumeration value="Pound"></xs:enumeration>
+                                </xs:restriction>
+                              </xs:simpleType>
+                            </xs:attribute>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Card_Owner_Name" minOccurs="0"/>
+                    <xs:element type="xs:string" name="Card_owner_Address" minOccurs="0"/>
+                    <xs:element name="Discount_Voucher">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Discount_Percentage"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="Discount_Type" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="type" use="optional">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Digital"/>
+                        <xs:enumeration value="Physical"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="mobile_restriction">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="44[0-9]-[0-9]{3}-[0-9]{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="landline_restriction">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="020-[0-9]{3}-[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

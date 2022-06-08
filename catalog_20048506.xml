@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="catalog_20048506.css"?>
+<Store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_20048506.xsd">
+	<Logo/>
+	<Store_Name>Fenwick Department Store</Store_Name>
+	<Store_Motto>Store never sleeps</Store_Motto>
+	<Store_Description>Fenwick (/ˈfɛnɪk/) is an independent chain of department stores in the United Kingdom.
+	</Store_Description>
+	<Store_Address >Addle Street,London,5208</Store_Address>
+	<Store_Contact>
+		<Mobile Country_Code="44">441-254-8928</Mobile>
+		<Landline State_Code="020">020-445-892</Landline>
+	</Store_Contact>
+	<Store_Website>http://www.fenwickstore.com</Store_Website>
+	<Mail>
+		<Postal_Address>Postal code: East London</Postal_Address>
+		<E-mail>fenwickstore@gmail.com</E-mail>
+	</Mail>
+	<Gift_Cards>
+		<Gift_Card type="Digital">
+			<Code_Number>Code Number: 100</Code_Number>
+			<Card_Validity>
+				<Card_Activation_Date>2021-04-28</Card_Activation_Date>
+				<Card_Expired_Date>2022-04-28</Card_Expired_Date>
+			</Card_Validity>
+
+			<Valid_Places>
+				<description>Places where this card is valid</description>
+				<Place>Retail Store, Resturants, Gas station</Place>
+			</Valid_Places>
+
+			<Card_Cost currency="Pound">Cost: 150</Card_Cost>
+			<Card_Owner_Name>Stephen Houdina</Card_Owner_Name>
+			<Card_owner_Address>Springfield Road</Card_owner_Address>
+			<Discount_Voucher Discount_Type="Percentage">
+				<Discount_Percentage>Discount Percent: 15</Discount_Percentage>
+			</Discount_Voucher>
+		</Gift_Card>
+
+		<Gift_Card type="Digital">
+			<Code_Number>Code Number: 110</Code_Number>
+			<Card_Validity>
+				<Card_Activation_Date>2021-05-28</Card_Activation_Date>
+				<Card_Expired_Date>2022-05-28</Card_Expired_Date>
+			</Card_Validity>
+
+			<Valid_Places>
+				<description>Places where this card is valid</description>
+				<Place>Retail Store, Resturants, Gas station</Place>
+			</Valid_Places>
+
+			<Card_Cost currency="Pound">Cost: 150</Card_Cost>
+			<Card_Owner_Name>Charles Darwin</Card_Owner_Name>
+			<Card_owner_Address>Grange Road</Card_owner_Address>
+			<Discount_Voucher Discount_Type="Percentage">
+				<Discount_Percentage>Discount Percent: 15</Discount_Percentage>
+			</Discount_Voucher>
+		</Gift_Card>
+		<Gift_Card type="Digital">
+			<Code_Number>Code Number: 120</Code_Number>
+			<Card_Validity>
+				<Card_Activation_Date>2021-06-28</Card_Activation_Date>
+				<Card_Expired_Date>2022-06-28</Card_Expired_Date>
+			</Card_Validity>
+
+			<Valid_Places>
+				<description>Places where this card is valid</description>
+				<Place>Retail Store, Resturants, Gas station</Place>
+			</Valid_Places>
+
+			<Card_Cost currency="Pound">Cost: 150</Card_Cost>
+			<Card_Owner_Name>Robert Carlos</Card_Owner_Name>
+			<Card_owner_Address>Highfield Road</Card_owner_Address>
+			<Discount_Voucher Discount_Type="Percentage">
+				<Discount_Percentage>Discount Percent: 15</Discount_Percentage>
+			</Discount_Voucher>
+		</Gift_Card>
+
+		<Gift_Card type="Physical">
+			<Card_Validity>
+				<Card_Activation_Date>2021-07-28</Card_Activation_Date>
+				<Card_Expired_Date>2022-07-28</Card_Expired_Date>
+			</Card_Validity>
+
+			<Valid_Places>
+				<description>Places where this card is valid</description>
+				<Place>Retail Store, Resturants, Gas station</Place>
+			</Valid_Places>
+
+			<Card_Cost currency="Pound">Cost: 200</Card_Cost>
+			<Card_Owner_Name>Karim Benzema</Card_Owner_Name>
+			<Card_owner_Address>Queen Street</Card_owner_Address>
+			<Discount_Voucher Discount_Type="Percentage">
+				<Discount_Percentage>Discount Percent: 10</Discount_Percentage>
+			</Discount_Voucher>
+		</Gift_Card>
+
+		<Gift_Card type="Physical">
+			<Card_Validity>
+				<Card_Activation_Date>2021-08-28</Card_Activation_Date>
+				<Card_Expired_Date>2022-08-28</Card_Expired_Date>
+			</Card_Validity>
+
+			<Valid_Places>
+				<description>Places where this card is valid</description>
+				<Place>Retail Store, Resturants, Gas station</Place>
+			</Valid_Places>
+
+			<Card_Cost currency="Pound">Cost: 200</Card_Cost>
+			<Card_Owner_Name>Gareth Bale</Card_Owner_Name>
+			<Discount_Voucher Discount_Type="Percentage">
+				<Discount_Percentage>Discount Percent: 10</Discount_Percentage>
+			</Discount_Voucher>
+		</Gift_Card>
+
+		<Gift_Card type="Physical">
+			<Card_Validity>
+				<Card_Activation_Date>2021-09-28</Card_Activation_Date>
+				<Card_Expired_Date>2022-09-28</Card_Expired_Date>
+			</Card_Validity>
+
+			<Valid_Places>
+				<description>Places where this card is valid</description>
+				<Place>Retail Store, Resturants</Place>
+			</Valid_Places>
+
+			<Card_Cost currency="Pound">Cost: 200</Card_Cost>
+			<Card_owner_Address>Main Road</Card_owner_Address>
+			<Discount_Voucher Discount_Type="Percentage">
+				<Discount_Percentage>Discount Percent: 10</Discount_Percentage>
+			</Discount_Voucher>
+		</Gift_Card>
+	</Gift_Cards>
+</Store>
